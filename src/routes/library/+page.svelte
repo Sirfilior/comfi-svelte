@@ -1,39 +1,39 @@
 <script lang="ts">
-	import livingroom from '$lib/images/LivingRoom.png';
+	import library from '$lib/images/Library.png';
 
 	const debugFurniture = true;
+
 	const furniture = [
 		{
-			id: 'library',
-			link: '/library',
+			id: 'library-livingRoom',
+			link: '/',
 			styles: {
-				top: '43%',
-				left: '6%',
-				width: '12%',
-				height: '25%',
-				transform: 'skew(1deg, 334deg)'
+				top: '64%',
+				left: '63%',
+				width: '9%',
+				height: '18%'
 			}
 		},
 		{
-			id: 'kitchen',
-			link: '/kitchen',
+			id: 'bookshelf1',
+			link: '/stash/library',
 			styles: {
-				top: '70%',
-				left: '38%',
-				width: '21%',
-				height: '13%',
-				transform: 'skew(305deg, 32deg)'
+				top: '32%',
+				left: '51%',
+				width: '42%',
+				height: '22%',
+				transform: 'skew(0deg, 32deg)'
 			}
 		},
 		{
-			id: 'pc_shop',
-			link: '/stash/livingroom',
+			id: 'bookshelf2',
+			link: '/stash/library',
 			styles: {
-				top: '36%',
-				left: '32%',
-				width: '6.5%',
-				height: '8.8%',
-				transform: 'skew(0deg, -25deg)'
+				top: '27%',
+				left: '23%',
+				width: '28%',
+				height: '23%',
+				transform: 'skew(0deg, -32deg)'
 			}
 		}
 	];
@@ -52,5 +52,5 @@
 			/>
 		</a>
 	{/each}
-	<img src={livingroom} alt="Welcome" />
+	<img src={library} alt="Welcome" />
 </div>
