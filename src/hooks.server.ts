@@ -3,10 +3,10 @@ import DiscordProvider from '@auth/core/providers/discord';
 import { DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET } from '$env/static/private';
 
 export const handle = SvelteKitAuth({
-	providers: [
-		DiscordProvider({
-			clientId: DISCORD_CLIENT_ID,
-			clientSecret: DISCORD_CLIENT_SECRET
-		})
-	]
+  providers: [
+    DiscordProvider({
+      clientId: DISCORD_CLIENT_ID,
+      clientSecret: DISCORD_CLIENT_SECRET
+    })
+  ]
 });

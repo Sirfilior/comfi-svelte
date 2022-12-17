@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.purchased {
-	filter: grayscale(100%);
+.unpurchased {
+  filter: grayscale(100%);
 }
 
 .isometric {
-	transform: rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
+  transform: rotateX(-45deg) rotateY(0deg) rotateZ(0deg);
 }

@@ -1,56 +1,56 @@
 <script lang="ts">
-	import livingroom from '$lib/images/LivingRoom.png';
+  import livingroom from '$lib/images/LivingRoom.png';
 
-	const debugFurniture = true;
-	const furniture = [
-		{
-			id: 'library',
-			link: '/library',
-			styles: {
-				top: '43%',
-				left: '6%',
-				width: '12%',
-				height: '25%',
-				transform: 'skew(1deg, 334deg)'
-			}
-		},
-		{
-			id: 'kitchen',
-			link: '/kitchen',
-			styles: {
-				top: '70%',
-				left: '38%',
-				width: '21%',
-				height: '13%',
-				transform: 'skew(305deg, 32deg)'
-			}
-		},
-		{
-			id: 'pc_shop',
-			link: '/stash/livingroom',
-			styles: {
-				top: '36%',
-				left: '32%',
-				width: '6.5%',
-				height: '8.8%',
-				transform: 'skew(0deg, -25deg)'
-			}
-		}
-	];
+  const debugFurniture = true;
+  const furniture = [
+    {
+      id: 'library',
+      link: '/library',
+      styles: {
+        top: '43%',
+        left: '6%',
+        width: '12%',
+        height: '25%',
+        transform: 'skew(1deg, 334deg)'
+      }
+    },
+    {
+      id: 'kitchen',
+      link: '/kitchen',
+      styles: {
+        top: '70%',
+        left: '38%',
+        width: '21%',
+        height: '13%',
+        transform: 'skew(305deg, 32deg)'
+      }
+    },
+    {
+      id: 'pc_shop',
+      link: '/stash/livingroom',
+      styles: {
+        top: '36%',
+        left: '32%',
+        width: '6.5%',
+        height: '8.8%',
+        transform: 'skew(0deg, -25deg)'
+      }
+    }
+  ];
 </script>
 
 <div class="isometric relative">
-	{#each furniture as item}
-		<a href={item.link}>
-			<div
-				class={`z-10 absolute cursor-pointer${debugFurniture ? ' border-red-500 border-2' : ''}`}
-				style:top={item.styles.top}
-				style:left={item.styles.left}
-				style:width={item.styles.width}
-				style:height={item.styles.height}
-				style:transform={item.styles.transform}
-			/>
-		</a>
-	{/each}
-	<img src={livingroom} alt="Welcome" />
+  {#each furniture as item}
+    <a href={item.link}>
+      <div
+        class={`absolute z-10 cursor-pointer${debugFurniture ? ' border-2 border-red-500' : ''}`}
+        style:top={item.styles.top}
+        style:left={item.styles.left}
+        style:width={item.styles.width}
+        style:height={item.styles.height}
+        style:transform={item.styles.transform}
+      />
+    </a>
+  {/each}
+  <img src={livingroom} alt="Welcome" />
 </div>
