@@ -1,12 +1,10 @@
-import img1 from '$lib/content/livingroom/1.jpg';
-
 const content = [
   {
     id: 'l1',
     name: "appa's feelings",
     description: 'this picture shows appa feeling ok',
     date: '27.12.2020',
-    image: img1,
+    image: '/content/livingroom/1.jpg',
     media: '',
     type: 'image'
   },
@@ -15,7 +13,7 @@ const content = [
     name: "appa's feelings",
     description: 'this picture shows appa feeling ok',
     date: '2020-03-16T05:35:07.322Z',
-    image: img1,
+    image: '/content/livingroom/1.jpg',
     media: '',
     type: 'image'
   },
@@ -24,7 +22,7 @@ const content = [
     name: "appa's feelings",
     description: 'this picture shows appa feeling ok',
     date: '2020-03-16T05:35:07.322Z',
-    image: img1,
+    image: '/content/livingroom/1.jpg',
     media: '',
     type: 'image'
   },
@@ -33,7 +31,7 @@ const content = [
     name: "appa's feelings",
     description: 'this picture shows appa feeling ok',
     date: '2020-03-16T05:35:07.322Z',
-    image: img1,
+    image: '/content/livingroom/1.jpg',
     media: '',
     type: 'image'
   }
