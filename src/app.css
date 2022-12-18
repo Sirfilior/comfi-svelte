@@ -14,6 +14,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @apply rounded-xl bg-woodlight py-1 px-2 text-white transition duration-300 ease-in-out hover:bg-orange-300;
+    @apply rounded-xl bg-woodlight py-1 px-2 text-white transition duration-300 ease-in-out hover:bg-woodhighlight;
   }
+}
+
+/* Fixme with tailwind variant */
+.night .bg-wood {
+  background-color: #131217 !important;
+}
+
+.night .bg-woodlight {
+  background-color: #5a436e !important;
+}
+
+.night .btn:hover,
+.night .bg-woodhighlight {
+  background-color: #8c68ae !important;
 }

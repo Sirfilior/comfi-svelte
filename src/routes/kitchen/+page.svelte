@@ -1,5 +1,7 @@
 <script lang="ts">
-  import kitchen from '$lib/images/Kitchen.png';
+  import kitchen from '$lib/images/kitchen.png';
+  import kitchenNight from '$lib/images/kitchenNight.png';
+  import { isNightmode } from '$lib/util/util';
   import config from '$lib/config';
 
   const furniture = [
@@ -32,5 +34,9 @@
       />
     </a>
   {/each}
-  <img src={kitchen} alt="Welcome" />
+  {#if isNightmode()}
+    <img src={kitchenNight} alt="Welcome" />
+  {:else}
+    <img src={kitchen} alt="Welcome" />
+  {/if}
 </div>

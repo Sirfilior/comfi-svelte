@@ -1,5 +1,7 @@
 <script lang="ts">
-  import library from '$lib/images/Library.png';
+  import library from '$lib/images/library.png';
+  import libraryNight from '$lib/images/libraryNight.png';
+  import { isNightmode } from '$lib/util/util';
   import config from '$lib/config';
 
   const furniture = [
@@ -53,5 +55,9 @@
       />
     </a>
   {/each}
-  <img src={library} alt="Welcome" />
+  {#if isNightmode()}
+    <img src={libraryNight} alt="Welcome" />
+  {:else}
+    <img src={library} alt="Welcome" />
+  {/if}
 </div>

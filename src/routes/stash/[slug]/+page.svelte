@@ -37,7 +37,9 @@
         <svelte:component this={getItemComponent(item.type)} {item} />
       </div>
     {:else}
-      <span class="text-white">Nothing in stash for {data.room}</span>
+      <div class="col-span-4 text-center">
+        <span class="text-white">Nothing purchased in the {data.room} :)</span>
+      </div>
     {/each}
   </div>
 </div>

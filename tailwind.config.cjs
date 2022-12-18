@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -8,8 +10,9 @@ module.exports = {
         serif: ['"Press Start 2P"', 'ui-serif', 'Georgia']
       },
       colors: {
-        wood: '#342010',
-        woodlight: '#ba9d58'
+        wood: '#6e4f38',
+        woodlight: '#ba9d58',
+        woodhighlight: '#ccaf8f'
       }
     }
   },

@@ -5,14 +5,9 @@
   let paused = true;
 </script>
 
-<div class="absolute inset-x-0 top-0 z-40 flex justify-between gap-12 bg-wood px-4 pt-5">
+<div class="absolute inset-x-0 top-0 z-40 flex justify-between gap-12 px-4 pt-5">
   <nav class="flex gap-4 text-white">
-    <a
-      href="/"
-      class={`flex items-center justify-center rounded-xl p-1 ${
-        $page.url.pathname === '/' ? 'bg-orange-300' : 'bg-woodlight'
-      }`}
-    >
+    <a href="/" class={`btn ${$page.url.pathname === '/' ? 'bg-woodhighlight' : 'bg-woodlight'}`}>
       <svg fill="none" class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         {' '}
         <path
@@ -23,9 +18,7 @@
     </a>
     <a
       href="/library"
-      class={`flex items-center justify-center rounded-xl p-1 ${
-        $page.url.pathname === '/library' ? 'bg-orange-300' : 'bg-woodlight'
-      }`}
+      class={`btn ${$page.url.pathname === '/library' ? 'bg-woodhighlight' : 'bg-woodlight'}`}
     >
       <svg fill="none" class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         {' '}
@@ -38,9 +31,7 @@
 
     <a
       href="/kitchen"
-      class={`flex items-center justify-center rounded-xl p-1 ${
-        $page.url.pathname === '/kitchen' ? 'bg-orange-300' : 'bg-woodlight'
-      }`}
+      class={`btn ${$page.url.pathname === '/kitchen' ? 'bg-woodhighlight' : 'bg-woodlight'}`}
     >
       <svg fill="none" class="h-12 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path

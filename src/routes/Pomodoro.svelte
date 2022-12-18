@@ -2,10 +2,11 @@
   import { onDestroy } from 'svelte';
   import { page } from '$app/stores';
   import { getActiveRoomUrl } from '$lib/util/util';
+  import { PUBLIC_POMODORO_TIME } from '$env/static/public';
 
   export let balance: number;
 
-  const pomodoroMins = 1;
+  const pomodoroMins: number = parseInt(PUBLIC_POMODORO_TIME);
   const pomodoroLength = pomodoroMins * 60 * 1000;
   let pomodoros = 0;
 
@@ -56,13 +57,11 @@
   $: shopUrl = getActiveRoomUrl($page.url.pathname);
 </script>
 
-<div class="absolute inset-x-0 bottom-0 z-40 flex justify-between gap-12 bg-wood px-4 pb-5">
+<div class="absolute inset-x-0 bottom-0 z-40 flex justify-between gap-12 px-4 pb-5">
   <div>
     <a
       href={`/shop/${shopUrl}`}
-      class={`flex items-center justify-center rounded-xl p-1 text-white ${
-        $page.url.pathname.includes('/shop') ? 'bg-orange-300' : 'bg-woodlight'
-      }`}
+      class={`btn ${$page.url.pathname.includes('/shop') ? 'bg-woodhighlight' : 'bg-woodlight'}`}
     >
       <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
         <path
@@ -90,7 +89,7 @@
         </svg>
       </button>
     {/if}
-    <div class="btn">
+    <div class="align-center flex items-center rounded-xl bg-woodlight py-1 px-2 text-white">
       <span>{remainingTime}</span>
       <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
         <path
