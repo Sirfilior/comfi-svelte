@@ -39,6 +39,7 @@
     "@auth/core": "^0.1.4",
     "@auth/sveltekit": "^0.1.6",
     "@prisma/client": "^4.7.1",
+    "@sveltejs/adapter-node": "^1.0.0",
     "@zerodevx/svelte-toast": "1.0.0-rc.1",
     "tailwind-scrollbar-hide": "^1.1.7"
   }
