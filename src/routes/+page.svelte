@@ -1,7 +1,7 @@
 <script lang="ts">
   import livingroom from '$lib/images/LivingRoom.png';
+  import config from '$lib/config';
 
-  const debugFurniture = true;
   const furniture = [
     {
       id: 'library',
@@ -43,7 +43,9 @@
   {#each furniture as item}
     <a href={item.link}>
       <div
-        class={`absolute z-10 cursor-pointer${debugFurniture ? ' border-2 border-red-500' : ''}`}
+        class={`absolute z-10 cursor-pointer${
+          config.DEBUG_FURNITURE ? ' border-2 border-red-500' : ''
+        }`}
         style:top={item.styles.top}
         style:left={item.styles.left}
         style:width={item.styles.width}

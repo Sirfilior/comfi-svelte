@@ -22,8 +22,6 @@ export const actions: Actions = {
         data: { balance: { decrement: config.PRICE } }
       });
 
-      console.log(updatedBalance);
-
       if (updatedBalance.count === 0) {
         return fail(422, { id: id, room: room, error: 'Not enough balance' });
       }

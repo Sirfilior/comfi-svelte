@@ -51,10 +51,7 @@
     </a>
   </nav>
   <div class="flex gap-2">
-    <button
-      class="flex items-center justify-center rounded-xl bg-woodlight p-1 text-white"
-      on:click={() => (paused = !paused)}
-    >
+    <button class="btn" on:click={() => (paused = !paused)}>
       {#if paused}
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
           <path
@@ -71,12 +68,7 @@
         </svg>
       {/if}
     </button>
-    <a
-      href="/auth/signout"
-      class="flex items-center justify-center rounded-xl bg-woodlight p-1 text-white"
-    >
-      Sign Out
-    </a>
+    <a href="/auth/signout" class="btn"> Sign Out </a>
   </div>
   <audio loop bind:paused>
     <source src={music} type="audio/mp3" />

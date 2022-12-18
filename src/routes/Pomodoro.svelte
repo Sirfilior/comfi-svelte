@@ -19,7 +19,6 @@
         running = false;
         studyTime = 0;
         clearInterval(interval);
-        console.log('Pomodoro complete!');
         add();
       }
     }
@@ -76,10 +75,7 @@
   </div>
   <div class="flex gap-2">
     {#if running}
-      <button
-        class="flex items-center justify-center rounded-xl bg-woodlight p-1 text-white"
-        on:click={reset}
-      >
+      <button class="btn" on:click={reset}>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
           <path
             d="M11 1H9v2h2v2H5v2H3v10h2v2h2v-2H5V7h6v2H9v2h2V9h2V7h2V5h-2V3h-2V1zm8 4h-2v2h2v10h-6v-2h2v-2h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5z"
@@ -88,16 +84,13 @@
         </svg>
       </button>
     {:else}
-      <button
-        class="flex items-center justify-center rounded-xl bg-woodlight p-1 text-white"
-        on:click={() => (running = true)}
-      >
+      <button class="btn" on:click={() => (running = true)}>
         <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
           <path d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z" fill="currentColor" />
         </svg>
       </button>
     {/if}
-    <div class="flex items-center justify-center rounded-xl bg-woodlight p-1 text-white">
+    <div class="btn">
       <span>{remainingTime}</span>
       <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
         <path

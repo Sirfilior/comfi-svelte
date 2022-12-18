@@ -5,7 +5,7 @@ const content = [
     id: 'l1',
     name: "appa's feelings",
     description: 'this picture shows appa feeling ok',
-    date: '2020-03-16T05:35:07.322Z',
+    date: '27.12.2020',
     image: img1,
     media: '',
     type: 'image'

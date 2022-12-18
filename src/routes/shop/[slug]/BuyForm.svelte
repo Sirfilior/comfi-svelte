@@ -1,17 +1,15 @@
 <script lang="ts">
+  import { enhance } from '$app/forms';
   import config from '$lib/config';
 
   export let id: string;
   export let room: string;
 </script>
 
-<form method="POST" action="?/buy">
+<form method="POST" action="?/buy" use:enhance>
   <input type="hidden" name="id" value={id} />
   <input type="hidden" name="room" value={room} />
-  <button
-    class="flex items-center justify-center rounded-xl bg-woodlight p-1 text-white"
-    type="submit"
-  >
+  <button class="btn" type="submit">
     <span>Buy for {config.PRICE}</span>
     <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-12 w-12">
       <path

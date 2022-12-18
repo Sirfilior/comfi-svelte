@@ -4,7 +4,7 @@ import audio1 from '$lib/content/library/1.mp3';
 const content = [
   {
     id: 'li1',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-1',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -13,7 +13,7 @@ const content = [
   },
   {
     id: 'li2',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-2',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -22,7 +22,7 @@ const content = [
   },
   {
     id: 'li3',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-3',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -31,7 +31,7 @@ const content = [
   },
   {
     id: 'li4',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-4',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -40,7 +40,7 @@ const content = [
   },
   {
     id: 'li5',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-5',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -49,7 +49,7 @@ const content = [
   },
   {
     id: 'li6',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-6',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -58,7 +58,7 @@ const content = [
   },
   {
     id: 'li7',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-7',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: '/content/library/7.mp3',
@@ -67,7 +67,7 @@ const content = [
   },
   {
     id: 'li8',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-8',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -76,7 +76,7 @@ const content = [
   },
   {
     id: 'li9',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-9',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -85,7 +85,7 @@ const content = [
   },
   {
     id: 'li10',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-10',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -94,7 +94,7 @@ const content = [
   },
   {
     id: 'li11',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-11',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
@@ -103,7 +103,7 @@ const content = [
   },
   {
     id: 'li12',
-    name: 'Die Unendliche Geschichte',
+    name: 'Die Unendliche Geschichte Kapitel-12',
     description: 'Die Unendliche Geschichte',
     date: '2020-03-16T05:35:07.322Z',
     media: audio1,
